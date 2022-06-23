@@ -7,11 +7,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -28,7 +24,117 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+
+
+.container{
+  background-color: rgb(35, 29, 29);
+  margin-top: 10px;
+  position: relative; 
+  width: 100%;
+  background-size: cover;
+  /* background-position: center; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 76, 0.75)),url(https://png.pngtree.com/thumb_back/fw800/background/20210923/pngtree-news-red-and-blue-stripe-tv-background-image_902549.png);
+  width: 100%;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 76, 0.75)),url(https://png.pngtree.com/thumb_back/fw800/background/20210923/pngtree-news-red-and-blue-stripe-tv-background-image_902549.png);
+  background-size: cover;
+  background-position: center;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 50px;
+  margin: 20px;
+  font-weight: bold;
+  border: 2px solid #eaf0f0;
+  background: transparent;
+  color: antiquewhite;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: antiquewhite;
+  
+}
+
+
+.content h1{
+  font-size: 40px;
+  margin-top: 80px;
+}
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+button:hover span{
+  width: 100%;
+  
+}
+button:hover{
+  border: none;
+  color: rgb(5, 5, 52);
+}
+a{
+  font-weight: bold;
+  text-decoration: none;
+  color: antiquewhite;
+}
+span{
+  background: #f0f3f3;
+  font-size: 40px;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  /* transition: 0.5s; */
+}
+/* .body{
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 76, 0.75)),url(https://png.pngtree.com/thumb_back/fw800/background/20210923/pngtree-news-red-and-blue-stripe-tv-background-image_902549.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+
+} */
+/* .container1{
+  
+position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 22%;
+
+}
+.container1 .ring{
+position: relative;
+width: 150px;
+height: 150px;
+margin: -30px;
+border-radius: 50%;
+border: 4px solid #fff;
+border:4px solid transparent;
+border-top:4px solid #35fae7;
+animation: animate 4s linear infinite;
+}
+@keyframes animate{
   from {
     transform: rotate(0deg);
   }
@@ -36,3 +142,60 @@
     transform: rotate(360deg);
   }
 }
+.container1 .ring::before{
+  content:'';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #35fae7;
+  box-shadow: 0 0 0 4px #24ecff33,0 0 0 8px #24ecff21,0 0 0 14px #24ecff09,0 0 20px #24ecff,0 0 50px #24ecff;
+}
+.container1 .ring:nth-child(2){
+animation: animate2 linear 4s infinite;
+animation-delay: -0.1s;
+border-top: 4px solid transparent;
+border-left: 4px solid #f7fa35;
+}
+.container1 .ring:nth-child(2)::before{
+  content:'';
+  position: absolute;
+  top: initial;
+  bottom: 12px;
+  left: 12px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #f7fa35;
+  box-shadow: 0 0 0 4px #fff82433,0 0 0 8px #fff82425,0 0 0 14px#fff82409,0 0 20px #f7fa35,0 0 50px #f7fa35;
+}
+@keyframes animate2{
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.container1 .ring:nth-child(3){
+  animation: animate2 linear 4s infinite;
+  animation-delay: -2s;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #34f744;
+  position: absolute;
+  top: -66.66px;
+}
+.container1 .ring:nth-child(3)::before{
+  content:'';
+  position: absolute;
+  top: initial;
+  bottom: 12px;
+  left: 12px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #34f744;
+  box-shadow: 0 0 0 4px #24ff5033,0 0 0 8px #24ff5021,0 0 0 14px #24ff5009,0 0 20px #34f744,0 0 50px #34f744;
+} */
